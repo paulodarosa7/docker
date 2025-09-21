@@ -189,8 +189,28 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 <img width="1866" height="886" alt="image" src="https://github.com/user-attachments/assets/907ae949-967e-4055-81f2-efee5a4ff9b6" />
 
 ---
-### Dicionário:
+### 📖 Dicionário de Argumentos Docker
 
+| Argumento / Comando | Significado |
+|----------------------|-------------|
+| `docker pull <imagem>` | Baixa a imagem do Docker Hub para sua máquina. |
+| `docker run <imagem>` | Cria e inicia um container a partir de uma imagem. |
+| `-d` | Executa o container em **modo desacoplado** (em segundo plano). |
+| `--name nome` | Define um **nome personalizado** para o container. |
+| `-p host:container` | Mapeia a porta do **host** para a porta do **container**. Ex: `-p 8081:8080`. |
+| `-v host:container` | Monta um **volume** (pasta/arquivo do host disponível dentro do container). |
+| `--rm` | Remove o container automaticamente após ser finalizado. |
+| `--detach=true` | Similar ao `-d`, roda o container em segundo plano. |
+| `--device=/dev/kmsg` | Dá acesso a um dispositivo do host dentro do container. |
+| `docker ps` | Lista containers ativos. |
+| `docker ps -a` | Lista containers ativos **e inativos**. |
+| `docker stop <id/nome>` | Para um container em execução. |
+| `docker start <id/nome>` | Inicia um container parado. |
+| `docker restart <id/nome>` | Reinicia um container. |
+| `docker rm <id/nome>` | Remove um container. |
+| `docker rmi <imagem>` | Remove uma imagem do host. |
+| `docker logs <id/nome>` | Mostra os **logs de saída** de um container. |
+| `docker stats` | Exibe estatísticas em tempo real de CPU, memória e rede dos containers. |
 
 
 

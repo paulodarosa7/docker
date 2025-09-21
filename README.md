@@ -143,7 +143,9 @@ http://localhost:9090/targets -> Prometheus > O alvo cAdvisor deve estar como UP
 <img width="1898" height="291" alt="image" src="https://github.com/user-attachments/assets/4ce34ac0-c54f-4b41-8cd9-815697d83ef1" />
 
 Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a configuração de nossas dashboards!
+
 ---
+
 ## 📊 Configurando Dashboards com Grafana!
 Acesse na web [localhost:3000]
 

@@ -207,7 +207,7 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 | `docker stop <id/nome>` | Para um container em execução. |
 | `docker start <id/nome>` | Inicia um container parado. |
 | `docker restart <id/nome>` | Reinicia um container. |
-| `docker rm <id/nome>` | Remove um container. |
+| `docker [remove ou rm] <id/nome>` | Remove um container. |
 | `docker rmi <imagem>` | Remove uma imagem do host. |
 | `docker logs <id/nome>` | Mostra os **logs de saída** de um container. |
 | `docker stats` | Exibe estatísticas em tempo real de CPU, memória e rede dos containers. |

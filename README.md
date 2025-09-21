@@ -22,9 +22,9 @@ Instalação de algumas dependências da ferramenta.
 ```bash
 pip3 install docker
 ```
-
-## 🛰🪛 Configuração do Prometheus
 ---
+## 🛰🪛 Configuração do Prometheus
+
 Criação de uma pasta chamada "prometheus" e um arquivo de texto chamado de "prometheus.yml"
 
 ```bash

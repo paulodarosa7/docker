@@ -4,7 +4,7 @@ Este projeto tem como objetivo a criação de um **sistema de monitoramento de c
 ---
 
 ## 🔨 Ferramentas Utilizadas
-
+- <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/38611b3e-5266-46de-acdd-eaf68c0f811b" />  **[Docker](https://www.docker.com/)** → Plataforma de gerenciamento de containers.
 - <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/5df421c8-f594-422b-bd13-75809f7ea5fd" /> **[cAdvisor](https://github.com/google/cadvisor)** → Coleta métricas dos containers.
 - <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/21eba712-c10d-4f77-b892-c01020578a7e" /> **[Prometheus](https://prometheus.io/)** → Organiza e armazena as métricas.
 - <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/3471f2c6-75bb-4264-ad6e-7182348705c2" /> **[Grafana](https://grafana.com/)** → Criação de dashboards de monitoramento.
@@ -133,13 +133,13 @@ docker pull grafana/grafana:main-ubuntu
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
 ```
 Acesse na web:
-http://localhost:3000 -> Grafana, credenciais (admin / admin)
+http://localhost:3000 → Grafana, credenciais (admin / admin)
 <img width="1055" height="730" alt="image" src="https://github.com/user-attachments/assets/acfe0210-b5bc-4a13-a19a-fc2f199c8eeb" />
 
-http://localhost:8080/metrics -> métricas do cAdvisor
+http://localhost:8080/metrics → métricas do cAdvisor
 <img width="1880" height="189" alt="image" src="https://github.com/user-attachments/assets/62b3868a-90fe-42a5-8a3e-0791a0e94563" />
 
-http://localhost:9090/targets -> Prometheus > O alvo cAdvisor deve estar como UP!
+http://localhost:9090/targets → Prometheus > O alvo cAdvisor deve estar como UP!
 <img width="1898" height="291" alt="image" src="https://github.com/user-attachments/assets/4ce34ac0-c54f-4b41-8cd9-815697d83ef1" />
 
 Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a configuração de nossas dashboards!
@@ -166,7 +166,7 @@ Clique em Add data source e encontre o data source Prometheus.
 
 Nas configurações do prometheus, em Connection, coloque o ip da sua máquina, o mesmo encontrado quando compilamos ```ip a``` em nosso terminal.
 
-http://seu_ip:9090 -> porta utilizada pelo prometheus.
+http://seu_ip:9090 → porta utilizada pelo prometheus.
 
 <img width="1865" height="706" alt="image" src="https://github.com/user-attachments/assets/f5ed747a-b2e5-4eb1-8266-f1363effcfd1" />
 

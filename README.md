@@ -83,10 +83,21 @@ pull do Grafana:
 docker pull grafana/grafana:main-ubuntu
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
 ```
-Acesse na web
-http://localhost:3000 > Grafana, credenciais (admin / admin)
-http://localhost:9090/targets > Prometheus > O alvo cAdvisor deve estar como UP!
+Acesse na web:
+http://localhost:3000 -> Grafana, credenciais (admin / admin)
+<img width="1055" height="730" alt="image" src="https://github.com/user-attachments/assets/acfe0210-b5bc-4a13-a19a-fc2f199c8eeb" />
+
+http://localhost:8080/metrics -> métricas do cAdvisor
+<img width="1880" height="189" alt="image" src="https://github.com/user-attachments/assets/62b3868a-90fe-42a5-8a3e-0791a0e94563" />
+
+http://localhost:9090/targets -> Prometheus > O alvo cAdvisor deve estar como UP!
 <img width="1898" height="291" alt="image" src="https://github.com/user-attachments/assets/4ce34ac0-c54f-4b41-8cd9-815697d83ef1" />
+
+Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a configuração de nossas dashboards!
+
+## 📊 Configurando Dashboards com Grafana!
+
+
 
 
 

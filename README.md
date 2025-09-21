@@ -63,7 +63,7 @@ scrape_configs:
       - targets: ['192.168.x.x:8080'] <--------------------------------------- coloque o seu endereço ip
 ```
 ---
-## 🎛️ Manipulação de Containers
+## 📟 Manipulação de Containers
 Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 
 
 Para listar containers ativos:

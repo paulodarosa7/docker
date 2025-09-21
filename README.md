@@ -147,6 +147,8 @@ Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a c
 ---
 
 ## 📊 Configurando Dashboards com Grafana!
+
+### Adicionando o Prometheus API como data source
 Acesse na web: http://localhost:3000
 
 Coloque as credenciais admin / admin (altere a senha, se desejar)
@@ -155,7 +157,7 @@ Na tela inicial do Grafana, acesse o menu lateral
 <img width="1901" height="284" alt="image" src="https://github.com/user-attachments/assets/51ffc7a6-c890-48b7-a289-0bd580f7c9a6" />
 
 Encontre a opção "Connections" e depois clique em Data sources
-<img width="1897" height="541" alt="image" src="https://github.com/user-attachments/assets/9556b34d-c319-4888-97b3-d22d8f49df4c" />
+<img width="1892" height="570" alt="image" src="https://github.com/user-attachments/assets/d9943c98-a3ab-49d8-affc-d1cf40ac26fa" />
 
 Clique em Add data source e encontre o data source Prometheus.
 <img width="1898" height="498" alt="image" src="https://github.com/user-attachments/assets/4f71f991-e977-4402-9156-700fc250b499" />
@@ -170,6 +172,33 @@ http://seu_ip:9090 -> porta utilizada pelo prometheus.
 
 Role até o fim da tela e clique em Save & Test, deverá retornar sucesso.
 <img width="1875" height="349" alt="image" src="https://github.com/user-attachments/assets/09796e06-09e8-4c6a-80fd-e780e2866805" />
+
+### Criando a dashboard
+Ao retornar sucesso com o data source, volte ao menu lateral e entre na opção Dashboards
+<img width="1892" height="530" alt="image" src="https://github.com/user-attachments/assets/95717236-7382-403b-a15d-27ebb494253c" />
+
+Em Dashboards, iremos importar um modelo de dashboard pronto.
+<img width="1904" height="548" alt="image" src="https://github.com/user-attachments/assets/06a3bfa9-7daa-4562-9be2-199bb23a547f" />
+
+Iremos importar uma Dashboard criada pela Docker e pelo Grafana Labs Solutions, com id 893, clique em Load.
+<img width="1906" height="736" alt="image" src="https://github.com/user-attachments/assets/97c07aa1-0ca9-4466-92d0-3e522f6a487e" />
+Selecione a Prometheus API, e clique em Import.
+<img width="1906" height="736" alt="image" src="https://github.com/user-attachments/assets/ba9f2079-c3d2-4343-adea-4e54e3869cc3" />
+
+Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por padrão vem em 24 horas, altere para os últimos 5 minutos.
+<img width="1866" height="886" alt="image" src="https://github.com/user-attachments/assets/907ae949-967e-4055-81f2-efee5a4ff9b6" />
+
+---
+### Dicionário:
+
+
+
+
+
+
+
+
+
 
 
 

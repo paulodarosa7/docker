@@ -89,7 +89,7 @@ Para remover:
 docker stop container
 docker remove container
 ```
-É interessante verificarmos se não há containers que utilizam as portas 8080, 3000 ou 9090 da sua máquina, pois haverá conflito. Quando realizarmos a pull das imagens precisaremos alterar a porta que o container irá rodar, ```bash docker run -p nova_porta_host:porta_container``` Se é um container que não está em uso, será preciso "stopar" o container.
+É interessante verificarmos se não há containers que utilizam as portas 8080, 3000 ou 9090 da sua máquina, pois haverá conflito. Quando realizarmos a pull das imagens precisaremos alterar a porta que o container irá rodar, ```docker run -p nova_porta_host:porta_container``` Se é um container que não está em uso, será preciso "stopar" o container.
 
 ---
 ## 🐳 Pull de Containers

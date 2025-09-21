@@ -89,8 +89,20 @@ Para remover:
 docker stop container
 docker remove container
 ```
-É interessante verificarmos se não há containers que utilizam as portas 8080, 3000 ou 9090 da sua máquina, pois haverá conflito. Quando realizarmos a pull das imagens precisaremos alterar a porta que o container irá rodar, ```docker run -p nova_porta_host:porta_container``` Se é um container que não está em uso, será preciso "stopar" o container.
+---
+⚠️ Atenção às portas
+Antes de iniciar os containers, verifique se as portas 8080, 3000 ou 9090 já não estão em uso na sua máquina.
 
+Se já estiverem em uso por outro container, será necessário parar esse container (docker stop nome_ou_id).
+
+Caso não queira parar o container existente, você pode alterar a porta do host ao rodar o comando com -p.
+
+Exemplo:
+
+docker run -d -p 9091:9090 prom/prometheus
+
+
+Nesse caso, o Prometheus continua rodando dentro do container na porta 9090, mas estará acessível pelo host em 9091.
 ---
 ## 🐳 Pull de Containers
 pull do Prometheus:

@@ -5,7 +5,7 @@ Este projeto tem como objetivo a criação de um **sistema de monitoramento de c
 
 ## 📦 Ferramentas Utilizadas
 
-- <img width="20" height="20" alt="prometheus" src="https://github.com/user-attachments/assets/ddf05e78-12f5-48ab-ba2c-bc35857eacc6" /> **[cAdvisor](https://github.com/google/cadvisor)** → Coleta métricas dos containers.
+- <img width="15" height="15" alt="prometheus" src="https://github.com/user-attachments/assets/ddf05e78-12f5-48ab-ba2c-bc35857eacc6" /> **[cAdvisor](https://github.com/google/cadvisor)** → Coleta métricas dos containers.
 - **[Prometheus](https://prometheus.io/)** → Organiza e armazena as métricas.
 - **[Grafana](https://grafana.com/)** → Criação de dashboards de monitoramento.
 

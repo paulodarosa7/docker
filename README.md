@@ -3,7 +3,7 @@ Este projeto tem como objetivo a criação de um **sistema de monitoramento de c
 
 ---
 
-## 📦 Ferramentas Utilizadas
+## 🔨 Ferramentas Utilizadas
 
 - <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/5df421c8-f594-422b-bd13-75809f7ea5fd" /> **[cAdvisor](https://github.com/google/cadvisor)** → Coleta métricas dos containers.
 - <img width="15" height="15" alt="image" src="https://github.com/user-attachments/assets/21eba712-c10d-4f77-b892-c01020578a7e" /> **[Prometheus](https://prometheus.io/)** → Organiza e armazena as métricas.
@@ -23,7 +23,7 @@ Instalação de algumas dependências da ferramenta.
 pip3 install docker
 ```
 ---
-## 🪛 Configuração do Prometheus
+## ⚙️ Configuração do Prometheus
 
 Criação de uma pasta chamada "prometheus" e um arquivo de texto chamado de "prometheus.yml"
 
@@ -63,7 +63,7 @@ scrape_configs:
       - targets: ['192.168.x.x:8080'] <--------------------------------------- coloque o seu endereço ip
 ```
 ---
-## 💡 Manipulação de Containers
+## 🎛️ Manipulação de Containers
 Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 
 
 Para listar containers ativos:

@@ -92,13 +92,13 @@ docker remove container
 ---
 ⚠️ **Atenção às portas**
 
-Antes de iniciar os containers, verifique se as portas 8080, 3000 ou 9090 já não estão em uso na sua máquina.
+Antes de iniciar a pull dos containers, verifique se as portas 8080, 3000 ou 9090 já não estão em uso em sua máquina.
 
 Se já estiverem em uso por outro container, será necessário parar esse container (docker stop nome_ou_id).
 
 Caso não queira parar o container existente, você pode alterar a porta do host ao rodar o comando com -p.
 
-Exemplo:
+Por exemplo:
 ```bash
 docker run -d -p 9091:9090 prom/prometheus
 ```

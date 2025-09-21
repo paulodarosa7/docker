@@ -143,8 +143,36 @@ http://localhost:9090/targets -> Prometheus > O alvo cAdvisor deve estar como UP
 <img width="1898" height="291" alt="image" src="https://github.com/user-attachments/assets/4ce34ac0-c54f-4b41-8cd9-815697d83ef1" />
 
 Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a configuração de nossas dashboards!
-
+---
 ## 📊 Configurando Dashboards com Grafana!
+Acesse na web [localhost:3000]
+
+Coloque as credenciais admin / admin (altere a senha, se desejar)
+
+Na tela inicial do Grafana, acesse o menu lateral
+<img width="1901" height="284" alt="image" src="https://github.com/user-attachments/assets/51ffc7a6-c890-48b7-a289-0bd580f7c9a6" />
+
+Encontre a opção "Connections" e depois clique em Data sources
+<img width="1897" height="541" alt="image" src="https://github.com/user-attachments/assets/9556b34d-c319-4888-97b3-d22d8f49df4c" />
+
+Clique em Add data source e encontre o data source Prometheus.
+<img width="1898" height="498" alt="image" src="https://github.com/user-attachments/assets/4f71f991-e977-4402-9156-700fc250b499" />
+
+<img width="1877" height="280" alt="image" src="https://github.com/user-attachments/assets/0d9e9c9b-a359-4db1-a50d-40612ab8c4ec" />
+
+Nas configurações do prometheus, em Connection, coloque o ip da sua máquina, o mesmo encontrado quando compilamos ```ip a``` em nosso terminal.
+
+http://seu_ip:9090 -> porta utilizada pelo prometheus.
+
+<img width="1865" height="706" alt="image" src="https://github.com/user-attachments/assets/f5ed747a-b2e5-4eb1-8266-f1363effcfd1" />
+
+Role até o fim da tela e clique em Save & Test, deverá retornar sucesso.
+<img width="1875" height="349" alt="image" src="https://github.com/user-attachments/assets/09796e06-09e8-4c6a-80fd-e780e2866805" />
+
+
+
+
+
 
 
 

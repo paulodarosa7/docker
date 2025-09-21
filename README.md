@@ -90,7 +90,8 @@ docker stop container
 docker remove container
 ```
 ---
-⚠️ Atenção às portas
+⚠️ **Atenção às portas**
+
 Antes de iniciar os containers, verifique se as portas 8080, 3000 ou 9090 já não estão em uso na sua máquina.
 
 Se já estiverem em uso por outro container, será necessário parar esse container (docker stop nome_ou_id).

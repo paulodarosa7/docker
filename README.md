@@ -193,11 +193,11 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 
 | Argumento / Comando | Significado |
 |----------------------|-------------|
-| `docker pull <imagem>` | Baixa a imagem do Docker Hub para sua máquina. |
-| `docker run <imagem>` | Cria e inicia um container a partir de uma imagem. |
-| `-d` | Executa o container em **modo desacoplado** (em segundo plano). |
+| `docker pull <imagem>` | Realiza o download da imagem do Docker Hub para sua máquina. |
+| `docker run <imagem>` | Cria e executa um container a partir de uma imagem. |
+| `-d` | A flag -d (abreviação de --detach) executa o contêiner em segundo plano. Isso significa que o Docker inicia o contêiner e retorna ao prompt do terminal. Além disso, ele não exibe logs no terminal. |
 | `--name nome` | Define um **nome personalizado** para o container. |
-| `-p host:container` | Mapeia a porta do **host** para a porta do **container**. Ex: `-p 8081:8080`. |
+| `-p host:container` | O sinalizador -p (abreviação de --publish) cria um mapeamento de portas entre o host e o contêiner. O sinalizador -p recebe um valor de string no formato HOST:CONTAINER, onde HOST é o endereço no host e CONTAINER é a porta no contêiner |
 | `-v host:container` | Monta um **volume** (pasta/arquivo do host disponível dentro do container). |
 | `--rm` | Remove o container automaticamente após ser finalizado. |
 | `--detach=true` | Similar ao `-d`, roda o container em segundo plano. |

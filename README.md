@@ -22,11 +22,16 @@ Instalação de algumas dependências da ferramenta.
 ```bash
 pip3 install docker
 ```
+
 ## 🛰🪛 Configuração do Prometheus
+---
+Criação de uma pasta chamada "prometheus" e um arquivo de texto chamado de "prometheus.yml"
+
 ```bash
 mkdir prometheus ; cd prometheus
 nano prometheus.yml
 ```
+
 Dentro do arquivo "prometheus.yml" adicione o conteúdo:
 ```bash
 global:
@@ -57,6 +62,7 @@ scrape_configs:
     static_configs:
       - targets: ['192.168.x.x:8080'] <--------------------------------------- coloque o seu endereço ip
 ```
+---
 ## 🐳 Pull de Containers
 pull do Prometheus:
 ```bash

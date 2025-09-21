@@ -147,7 +147,7 @@ Estando desta forma, nossos serviços estão funcionando. Prosseguiremos com a c
 ---
 
 ## 📊 Configurando Dashboards com Grafana!
-Acesse na web [http://localhost:3000]
+Acesse na web: http://localhost:3000
 
 Coloque as credenciais admin / admin (altere a senha, se desejar)
 

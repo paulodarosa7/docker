@@ -49,7 +49,7 @@ No terminal, rode:
 ```bash
 ip a
 ```
-Copie o IP do host (geralmente a placa de rede será eno1 ou enops1) e cole no - targets do nosso arquivo de configuração prometheus.yml
+Copie o IP do host (geralmente a placa de rede será eno1 ou enp0s1) e cole no - targets do nosso arquivo de configuração prometheus.yml
 ```bash
 nano prometheus.yml
 ```

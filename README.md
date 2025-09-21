@@ -213,13 +213,20 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 | `docker stats` | Exibe estatísticas em tempo real de CPU, memória e rede dos containers. |
 
 ---
-## Referências
+
+### Referências
 [Docker and system monitoring](https://grafana.com/grafana/dashboards/?search=893)
+
 [Containerize an application](https://docs.docker.com/get-started/workshop/02_our_app/)
+
 [Docker Hub](https://hub.docker.com/)
+
 [cAdvisor](https://github.com/google/cadvisor)
+
 [Grafana](https://grafana.com/)
+
 [Prometheus](https://prometheus.io/)
+
 
 
 

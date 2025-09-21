@@ -64,7 +64,32 @@ scrape_configs:
 ```
 ---
 ## 💡 Manipulação de Containers
+Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 
 
+Para listar containers ativos:
+```bash
+docker ps
+```
+Para listar containers ativos e inativos:
+```bash
+docker ps -a
+```
+Para listar containers em tempo real:
+```bash
+docker stats
+```
+Para dar start, stop e restart em algum container:
+```bash
+docker stop nome_ou_id_do_container
+docker start nome_ou_id_do_container
+docker restart nome_ou_id_do_container
+```
+Para remover:
+```bash
+docker stop container
+docker remove container
+```
+É interessante verificarmos se não há containers que utilizam as portas 8080, 3000 ou 9090 da sua máquina, pois haverá conflito. Quando realizarmos a pull das imagens precisaremos alterar a porta que o container irá rodar, ```bash docker run -p nova_porta_host:porta_container``` Se é um container que não está em uso, será preciso "stopar" o container.
 
 ---
 ## 🐳 Pull de Containers

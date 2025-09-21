@@ -18,7 +18,7 @@ Criar e ativar o ambiente virtual:
 virtualenv ambiente
 source ambiente/bin/activate
 ```
-## Instalação de algumas dependências da ferramenta.
+### Instalação de algumas dependências da ferramenta.
 ```bash
 pip3 install docker
 ```

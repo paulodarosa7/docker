@@ -11,7 +11,7 @@ Este projeto tem como objetivo a criação de um **sistema de monitoramento de c
 
 ---
 
-## ⚙️ Preparação do Ambiente
+## ⚙️ Preparação de um Ambiente Virtual
 
 Criar e ativar o ambiente virtual:
 ```bash

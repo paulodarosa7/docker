@@ -38,7 +38,8 @@ scrape_configs:
       - targets: ['ip_local:8080']
 ```
 Estes são os parametros que serão passados para o prometheus para que a ferramenta consiga coletar os dados dos containers. 
-Porém precisamos colocar o endereço ip do host na configuração
+Porém precisamos colocar o endereço ip do host na configuração.
+
 No terminal, rode:
 ```bash
 ip a

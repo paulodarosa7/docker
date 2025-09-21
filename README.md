@@ -99,11 +99,12 @@ Se já estiverem em uso por outro container, será necessário parar esse contai
 Caso não queira parar o container existente, você pode alterar a porta do host ao rodar o comando com -p.
 
 Exemplo:
-
+```bash
 docker run -d -p 9091:9090 prom/prometheus
-
+```
 
 Nesse caso, o Prometheus continua rodando dentro do container na porta 9090, mas estará acessível pelo host em 9091.
+
 ---
 ## 🐳 Pull de Containers
 pull do Prometheus:

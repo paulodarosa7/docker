@@ -214,7 +214,7 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 
 ---
 
-### Referências
+### 📝 Referências
 [Docker and system monitoring](https://grafana.com/grafana/dashboards/?search=893)
 
 [Containerize an application](https://docs.docker.com/get-started/workshop/02_our_app/)

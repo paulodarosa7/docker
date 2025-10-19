@@ -40,28 +40,13 @@ global:
 scrape_configs:
   - job_name: 'cadvisor'
     static_configs:
-      - targets: ['ip_local:8080']
+      - targets: ['cadvisor:8080']
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
 ```
 Estes são os parametros que serão passados para o prometheus para que a ferramenta consiga coletar os dados dos containers. 
-Porém precisamos colocar o endereço ip do host na configuração.
-
-No terminal, rode:
-```bash
-ip a
-```
-Copie o IP do host (geralmente a placa de rede será eno1 ou enp0s1) e cole no - targets do nosso arquivo de configuração prometheus.yml
-```bash
-nano prometheus.yml
-```
-```nano
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'cadvisor'
-    static_configs:
-      - targets: ['192.168.x.x:8080'] <--------------------------------------- coloque o seu endereço ip
-```
 ---
 ## 📟 Manipulação de Containers
 Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 
@@ -105,6 +90,13 @@ docker run -d -p 9091:9090 prom/prometheus
 
 Nesse caso, o Prometheus continua rodando dentro do container na porta 9090, mas estará acessível pelo host em 9091.
 
+---
+## 🌐 Criação de uma Docker Network
+Vamos criar uma network chamada de mynet
+```bash
+docker network create -d bridge mynet
+```
+A rede em docker é para facilitar a comunicação entre containers. 
 ---
 ## 🐳 Pull de Containers
 pull do Prometheus:

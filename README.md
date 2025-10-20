@@ -83,7 +83,7 @@ Se já estiverem em uso por outro container, será necessário parar esse contai
 
 Caso não queira parar o container existente, você pode alterar a porta do host ao rodar o comando com -p.
 
-Por exemplo:
+Por exemplo: (não compilar)
 ```bash
 docker run -d -p 9091:9090 prom/prometheus
 ```
@@ -103,7 +103,7 @@ pull do Prometheus:
 ```bash
 docker pull prom/prometheus:main
 docker run -d --name prometheus \
-  -p 9090:9090 \
+  -p 9090:9090 --network=mynet \
   -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml \
   prom/prometheus
 ```
@@ -114,6 +114,7 @@ docker run -d --name=cadvisor \
   --volume=/var/run:/var/run:rw \
   --volume=/sys:/sys:ro \
   --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --network=mynet \
   --publish=8080:8080 \
   --detach=true \
   --device=/dev/kmsg \
@@ -122,8 +123,22 @@ docker run -d --name=cadvisor \
 pull do Grafana:
 ```bash
 docker pull grafana/grafana:main-ubuntu
-docker run -d --name=grafana -p 3000:3000 grafana/grafana
+docker run -d --network=mynet --name=grafana -p 3000:3000 grafana/grafana
 ```
+
+pull do Node Exporter
+```bash
+docker pull prom/node-exporter:master
+docker run -d \
+  --network=mynet \
+  -p 9100:9100 \
+  --pid="host" \
+  -v "/:/host:ro" \
+  --name=node-exporter \
+  quay.io/prometheus/node-exporter:latest \
+  --path.rootfs=/host
+```
+
 Acesse na web:
 http://localhost:3000 → Grafana, credenciais (admin / admin)
 <img width="1055" height="730" alt="image" src="https://github.com/user-attachments/assets/acfe0210-b5bc-4a13-a19a-fc2f199c8eeb" />

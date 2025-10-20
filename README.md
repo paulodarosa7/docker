@@ -49,6 +49,68 @@ scrape_configs:
 Estes são os parametros que serão passados para o prometheus para que a ferramenta consiga coletar os dados dos containers. 
 
 ---
+
+## Configuração por meio do docker-compose.yml
+Neste arquivo, foi passado o passo a passo da criação de todo o ambiente de forma manual, porém tem uma forma mais prática.
+
+Crie um arquivo com o nome de docker-compose.yml, ou se preferir, pode realizar o pull deste git.
+```bash 
+nano docker-compose.yml
+```
+Conteúdo:
+```bash
+version: "3.8"
+
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - mynet
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - mynet
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - mynet
+
+  node_exporter:
+    image: prom/node-exporter:latest
+    container_name: node_exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
+```
+---
+⚠️ É IMPORTANTE QUE OS ARQUIVOS prometheus.yml E docker-compose.yml ESTEJAM NO MESMO DIRETÓRIO!
+---
+
 ## 📟 Manipulação de Containers
 Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 
 

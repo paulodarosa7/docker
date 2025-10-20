@@ -48,6 +48,7 @@ scrape_configs:
       - targets: ['node-exporter:9100']
 ```
 Estes são os parametros que serão passados para o prometheus para que a ferramenta consiga coletar os dados dos containers. 
+
 ---
 ## 📟 Manipulação de Containers
 Há diversos comandos que utilizamos para "cuidar" dos nossos containers. 

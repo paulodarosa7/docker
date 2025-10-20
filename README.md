@@ -50,7 +50,7 @@ Estes são os parametros que serão passados para o prometheus para que a ferram
 
 ---
 
-## Configuração por meio do docker-compose.yml
+## 🐙 Configuração por meio do docker-compose.yml
 Neste arquivo, foi passado o passo a passo da criação de todo o ambiente de forma manual, porém tem uma forma mais prática.
 
 Crie um arquivo com o nome de docker-compose.yml, ou se preferir, pode realizar o pull deste git.

@@ -98,6 +98,7 @@ Vamos criar uma network chamada de mynet
 docker network create -d bridge mynet
 ```
 A rede em docker é para facilitar a comunicação entre containers. 
+
 ---
 ## 🐳 Pull de Containers
 pull do Prometheus:

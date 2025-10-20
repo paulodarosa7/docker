@@ -219,6 +219,7 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 | `docker rmi <imagem>` | Remove uma imagem do host. |
 | `docker logs <id/nome>` | Mostra os **logs de saída** de um container. |
 | `docker stats` | Exibe estatísticas em tempo real de CPU, memória e rede dos containers. |
+| `docker network create -d bridge <nome_da_rede>` | Cria uma rede interna entre os containers. |
 
 ---
 

@@ -238,6 +238,8 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 
 [Prometheus](https://prometheus.io/)
 
+[Node Exporter](https://github.com/prometheus/node_exporter/releases)
+
 
 
 

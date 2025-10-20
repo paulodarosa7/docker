@@ -107,8 +107,11 @@ networks:
   mynet:
     driver: bridge
 ```
+
 ---
+
 ⚠️ É IMPORTANTE QUE OS ARQUIVOS prometheus.yml E docker-compose.yml ESTEJAM NO MESMO DIRETÓRIO!
+
 ---
 
 ## 📟 Manipulação de Containers

@@ -262,7 +262,6 @@ Pronto! A dashboard está funcional! Altere apenas a hora de atualização, por 
 | `-v host:container` | Monta um **volume** (pasta/arquivo do host disponível dentro do container). |
 | `--rm` | Remove o container automaticamente após ser finalizado. |
 | `--detach=true` | Similar ao `-d`, roda o container em segundo plano. |
-| `--device=/dev/kmsg` | Dá acesso a um dispositivo do host dentro do container. |
 | `docker ps` | Lista containers ativos. |
 | `docker ps -a` | Lista containers ativos **e inativos**. |
 | `docker stop <id/nome>` | Para um container em execução. |

@@ -11,19 +11,6 @@ Este projeto tem como objetivo a criação de um **sistema de monitoramento de c
 - <img width="18" height="18" alt="image" src="https://github.com/user-attachments/assets/12a920c5-7fd3-462a-95b4-83b993f4650e" /> **[Prometheus Node Exporter](https://github.com/prometheus/node_exporter/releases)** → Coleta dados do host.
 
 ---
-
-## 🌎 Preparação de um Ambiente Virtual
-
-Criar e ativar o ambiente virtual:
-```bash
-virtualenv ambiente
-source ambiente/bin/activate
-```
-Instalação de algumas dependências da ferramenta.
-```bash
-pip3 install docker
-```
----
 ## ⚙️ Configuração do Prometheus
 
 Criação de um arquivo de texto chamado de "prometheus.yml"
